@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World Cup 2022 Final: Argentina vs France, Analysis</title>
+<meta name="description" content="Interactive StatsBomb data analysis of the 2022 FIFA World Cup final: replay, shot map, player profiles, pass networks and the penalty shootout.">
+<meta property="og:title" content="World Cup 2022 Final: Argentina vs France, Analysis">
+<meta property="og:description" content="Interactive StatsBomb data analysis of the 2022 FIFA World Cup final.">
+<link rel="stylesheet" href="main.css">
+<style>html,body{background:#fbfafa;margin:0}body:has(> #root > .artifact-card)>#root{padding:0}#root>.artifact-card{border-radius:0;box-shadow:none}</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+window.instinctFile = Object.freeze({
+  initialRoute: decodeURIComponent(location.hash.slice(1) || '/'),
+  route: function(path){ if (typeof path==='string' && path.startsWith('/')) history.replaceState(null,'','#'+path); },
+  asset: function(v){ return new URL(v, document.baseURI).href; },
+  request: function(){ return Promise.resolve({status:'unavailable'}); },
+  live: Object.freeze({subscribe:function(){return function(){};}, hold:function(){}, reveal:function(){}})
+});
+</script>
+<script src="main.js"></script>
+</body>
+</html>
